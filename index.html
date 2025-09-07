@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Times </title>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Michroma&family=Orbitron:wght@400..900&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/script.js" defer></script>
+</head>
+<body>
+    <main class="conteudo_principal">
+        <h1 class="title_principal"><b>Sorteio de Times</b></h1>
+        <p class="parag_principal">Adicione os jogadores, configure quantos por time e sorteie de forma justa <br> e aleatória</p>
+
+        <section class="descricao_section">
+            <div class="descricao_conatainer">
+                <img src="img/add-user.png" alt="img" class="descricao_img">
+                <h2 class="descricao_title">Adicionar Jogadores</h1>
+            </div>
+
+            <div class="container_add">
+                <div class="bloco1">
+                    <input type="text" name="" id="nome_add" placeholder="Nome do Jogador">
+                    <button id="adicionar">Adicionar</button>
+                </div>
+
+                <div class="bloco2">
+                    <label for="" id="quantidade_jogadores">Quantos times:</label>
+                    <input type="number" name="" id="quantidade" placeholder="Ex: 2">
+                </div>
+            </div>
+        </section>
+
+        <section class="info_section">
+            <div class="flex_container">
+                <div class="info_container">
+                    <img src="img/add-user.png" alt="img" class="info_img">
+                    <h2 class="info_title">Jogadores</h2>
+                </div>
+
+                <div class="btns_container">
+                    <button id="sortear"><img src="img/shuffle.png" alt="img"> Sortear Times</button>
+                    <button id="limpar">Limpar Tudo</button>
+                </div>
+            </div>
+            
+            <div class="adicionados">
+    
+            </div>
+        </section>
+
+        <section class="times_sorteados">
+            <h1 class="titulo_sorteados">Times Sorteados</h1>
+        </section>
+
+
+        <section class="jogadores_fora">
+            <h1 class="titulo_fora"></h1>
+            <div class="nomesFora"></div>
+        </section>
+    </main>
+</body>
+</html>

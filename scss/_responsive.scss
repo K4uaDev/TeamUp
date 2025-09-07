@@ -1,0 +1,26 @@
+@media (max-width: 500px) {
+    .title_principal {
+        font-size: 1.7em;
+    }
+    .parag_principal {
+        font-size: .8em;
+        width: 80%;
+        margin: auto;
+    }
+    .flex_container { display: block; }
+
+    .info_container {
+        gap: 5px; 
+
+        img { width: 30px; }
+        h2 { font-size: 1.4em;}
+    }
+    .btns_container {
+        margin: 30px 0;
+        flex-direction: column;
+        gap: 10px;
+
+        #sortear { width: 100%;}
+        #limpar { width: 100%; }
+    }
+}
