@@ -94,11 +94,16 @@ function sortearTimes(qtdTimes) {
     timesSorteados.appendChild(containerTimes);
 
     if (proximos.length > 0) {
-        document.querySelector('.jogadores_fora').style.display = 'block';
-        document.querySelector('.titulo_fora').textContent = `Próximos [${proximos.length}]`;
-        const jogadoresFora = document.createElement('p');
-        jogadoresFora.textContent = proximos.join(', ');
-        sectionFora.appendChild(jogadoresFora);
+    document.querySelector('.jogadores_fora').style.display = 'block';
+    document.querySelector('.titulo_fora').textContent = `Próximos [${proximos.length}]`;
+
+    sectionFora.innerHTML = ""; 
+
+    proximos.forEach(jogador => {
+        const p = document.createElement('p');
+        p.textContent = jogador; 
+        sectionFora.appendChild(p); 
+    });
     } else {
         document.querySelector('.jogadores_fora').style.display = 'none';
     }
