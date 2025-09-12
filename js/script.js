@@ -19,6 +19,11 @@ function adicionarJogador() {
         nomeJogador.value = "";
         return;
     }
+    if (arrayNomes.includes(ajustarNome(nome))) {
+        alert("Nome já adicionado!");
+        nomeJogador.value = "";
+        return;
+    }
 
     const p = document.createElement('p');
     p.textContent = ajustarNome(nome);
@@ -103,6 +108,7 @@ function sortearTimes(qtdTimes) {
         const p = document.createElement('p');
         p.textContent = jogador; 
         sectionFora.appendChild(p); 
+        
     });
     } else {
         document.querySelector('.jogadores_fora').style.display = 'none';
