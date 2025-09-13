@@ -2,7 +2,7 @@ const nomeJogador = document.getElementById("nome_add");
 const nomesAdicionados = document.querySelector(".adicionados");
 const timesSorteados = document.querySelector('.times_sorteados');
 const sectionFora = document.querySelector('.nomesFora');
-let numjogadores = document.querySelector('.info_title');
+
 
 
 const arrayNomes = [];
@@ -35,6 +35,7 @@ function adicionarJogador() {
 
     arrayNomes.push(ajustarNome(nome));
     nomeJogador.value = "";
+    let numjogadores = document.querySelector('.info_title');
 
     img.addEventListener('click', () => {
         p.remove();
@@ -124,6 +125,8 @@ function limparTudo() {
     document.querySelector('.jogadores_fora').style.display = 'none';
     document.getElementById('quantidade').value = "";
     nomeJogador.value = "";
+    document.querySelector('.info_title').textContent = 'Jogadores';
+
 }
 
 const btnAdicionar = document.getElementById("adicionar");
